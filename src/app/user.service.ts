@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class UserService {
 
-  private baseUrl = 'http://tomcat.localhost:8080/demo/create-user';
+  private baseUrl = 'http://localhost:8080/demo/create-user';
 
   constructor(private http: HttpClient) { }
 

@@ -14,7 +14,7 @@ export class MainComponent implements OnInit {
   }
 
   gotoCreateUser() {
-    this.router.navigate(['/create-user']);
+    this.router.navigate(['create-user']);
   }
 
 }

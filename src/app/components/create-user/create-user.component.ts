@@ -40,6 +40,6 @@ export class CreateUserComponent implements OnInit {
   }
 
   gotoMain() {
-    this.router.navigate(['/user-portal']);
+    this.router.navigate(['user-portal']);
   }
 }
