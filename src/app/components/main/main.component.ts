@@ -17,4 +17,8 @@ export class MainComponent implements OnInit {
     this.router.navigate(['/create-user']);
   }
 
+  gotoUserPortal() {
+    this.router.navigate(['/user-portal']);
+  }
+
 }

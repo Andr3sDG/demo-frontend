@@ -1,22 +1,21 @@
-<h3>Create Employee</h3>
-<div  style="width: 400px;">
-  
-  <div class="field">
-      <label>Username</label>
-      <input type="text" [(ngModel)]="user.username" name="username">
-  </div>
-
-  <div class="field">
-      <label>Password</label>
-      <input type="text" [(ngModel)]="user.password" name="password">
-  </div>
-
-    <button type="button" class="btn btn-success" (click)="onSubmit()">Submit</button>
-    <button  (click)="gotoMain()" class="btn btn-secondary">Back</button>
-
+<app-main></app-main>
+<div class="container">
+    <div class="col-xl-5 col-lg-6 col-md-8 col-sm-10 mx-auto text-rigth form p-4">
+        <h3 class="text-center">Create new user!</h3>
+        <form>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Username or email</label>
+                <input type="email" class="form-control" [(ngModel)]="user.username" id="exampleInputEmail1" name="usernameInput">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" [(ngModel)]="user.password" id="exampleInputPassword1" name="passwordInput">
+            </div>
+            <div class="form-group">
+                <button type="button" (click)="onSubmit()" class="btn btn-primary btn-lg btn-block">Submit</button>
+                <br>
+                <button type="button" (click)="gotoUserPortal()" class="btn btn-secondary btn-lg btn-block">Go back</button>
+            </div>
+        </form>
+    </div>
 </div>
-
-<!-- <div [hidden]="!submitted">
-  <h4>You submitted successfully!</h4>
-   <button class="btn btn-success" (click)="newEmployee()">Add</button> 
-</div> -->

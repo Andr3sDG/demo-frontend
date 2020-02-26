@@ -31,7 +31,7 @@ export class CreateUserComponent implements OnInit {
     this.userService.createUser(this.user)
       .subscribe(data => console.log(data), error => console.log(error));
     this.user = new User();
-    this.gotoMain();
+    this.gotoUserPortal();
   }
 
   onSubmit() {
@@ -39,7 +39,7 @@ export class CreateUserComponent implements OnInit {
     this.save();    
   }
 
-  gotoMain() {
+  gotoUserPortal() {
     this.router.navigate(['/user-portal']);
   }
 }

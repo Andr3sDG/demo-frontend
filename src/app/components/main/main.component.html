@@ -1,16 +1,17 @@
-<h2>WELCOME TO THE USER PORTAL</h2>
-<p>You can access to this options</p>
-<ul>
-    <li>
-        <button class="btn btn-primary" (click)="gotoCreateUser()">Create user</button>
-    </li>
-    <li>
-        <a>Read all users</a>
-    </li>
-    <li>
-        <a>Update user</a>
-    </li>
-    <li>
-        <a>Delete user</a>
-    </li>
-</ul>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <img src="/assets/imgs/user.png">
+    <a class="navbar-brand" (click)="gotoUserPortal()">Welcome user</a>
+    <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" (click)="gotoCreateUser()">Create user</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">Update user</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">Delete user</a>
+            </li>
+        </ul>
+    </div>
+</nav> 
