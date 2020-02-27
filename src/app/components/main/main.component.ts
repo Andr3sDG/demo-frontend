@@ -8,17 +8,9 @@ import { Router } from '@angular/router';
 })
 export class MainComponent implements OnInit {
 
-  constructor( private router: Router) { }
+  constructor() { }
 
   ngOnInit() {
   }
-
-  gotoCreateUser() {
-    this.router.navigate(['/create-user']);
-  }
-
-  gotoUserPortal() {
-    this.router.navigate(['/user-portal']);
-  }
-
+  
 }
