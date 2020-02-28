@@ -1,26 +1,11 @@
-<div class="panel panel-primary">
-    <div class="panel-heading">
-      <h2>User List</h2>
-    </div>
-    <div class="panel-body">
-      <table class="table table-striped">
-        <thead>
-          <tr>
-            <th>Id</th>
-            <th>Username</th>
-            <th>Password</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let user of users | async">
-            <td>{{user.id}}</td>
-            <td>{{user.username}}</td>
-            <td>{{user.password}}</td>
-            <td><button (click)="deleteEmployee(employee.id)" class="btn btn-danger">Delete</button>
-                <button (click)="employeeDetails(employee.id)" class="btn btn-info" style="margin-left: 10px">Update</button>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+<div class="d-flex align-content-start flex-wrap">
+  <div *ngFor="let user of users | async" class="card text-white bg-dark mb-1 " style="max-width: 18rem; margin: 5px !important;">
+    <div class="card-header">Id: {{user.id}}</div>
+    <div class="card-body">
+      <p class="card-text">Username: {{user.username}}</p>
+      <p class="card-text">Password: {{user.password}}</p>
+      <button class="btn btn-danger">Delete</button>
+      <button class="btn btn-info" style="margin-left: 10px">Update</button>
     </div>
   </div>
+</div>
